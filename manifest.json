@@ -1,0 +1,9 @@
+{
+    "name": "su_slow's rebalance mod",
+    "version_number": "1.0.0",
+    "website_url": "",
+    "description": "This overhaul is designed to balance GTFO better and increase the variety of viable weapons.",
+    "dependencies": [
+	"dakkhuza-MTFO-4.6.2"
+    ]
+}
