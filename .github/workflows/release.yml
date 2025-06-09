@@ -39,9 +39,9 @@ jobs:
         zip -r ../suslow_rebalance_mod-${{ steps.get_version.outputs.version }}.zip .
 
     - name: Create GitHub Release
-      if: startsWith(github.ref, 'refs/tags/')
       uses: softprops/action-gh-release@v1
       with:
+        tag_name: v${{ steps.get_version.outputs.version }}
         files: |
           suslow_rebalance_mod-${{ steps.get_version.outputs.version }}.zip
         body: |
