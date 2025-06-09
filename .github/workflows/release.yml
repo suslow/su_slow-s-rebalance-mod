@@ -52,7 +52,7 @@ jobs:
           3. Install [MTFO](https://gtfo.thunderstore.io/package/dakkhuza/MTFO/)
           4. Extract this mod to your `BepInEx/plugins/` folder
           
-          Or install via [Thunderstore Mod Manager](https://www.overwolf.com/app/thunderstore-thunderstore_mod_manager)
+          Or install via Gale, r2modman
         draft: false
         prerelease: false
       env:
