@@ -241,10 +241,10 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
   - Range increased from 25.0 to 30.0
 - **Spear**:
   - Light attack damage increased from 2.0 to 2.5
-  - Charged attack stamina cost in combat reduced from 0.05 to 0.0
-  - Charged attack stamina cost out of combat reduced from 0.05 to 0.0
-  - Push stamina cost in combat reduced from 0.05 to 0.0
-  - Push stamina cost out of combat reduced from 0.05 to 0.0
+  - Charged attack stamina cost in combat reduced from 0.05 to 0.015
+  - Charged attack stamina cost out of combat reduced from 0.05 to 0.015
+  - Push stamina cost in combat reduced from 0.05 to 0.015
+  - Push stamina cost out of combat reduced from 0.05 to 0.015
 - **Bat**:
   - Light attack damage increased from 3.0 to 4.0
   - Light stagger multiplier reduced from 5.0 to 4.0
