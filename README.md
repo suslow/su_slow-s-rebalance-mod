@@ -1,237 +1,270 @@
-# su_slow's rebalance mod
+# suslow's rebalance mod
 
-## Изменения в архетипах оружия
+## 🎯 Overview
 
-### 1. GEAR_Rifle_Semi (Drekker PRES MOD 556 Rifle)
-- **DefaultClipSize**: Увеличен с 14 до 20
-- **DefaultReloadTime**: Увеличен с 1.9 до 2.0
-- **CostOfBullet**: Увеличен с 3.8 до 3.83
+No more being forced into the same meta loadouts - now you can enjoy experimenting with different weapon combinations!
 
-### 2. GEAR_Rifle_Burst (Malatack CH 4 Burst Rifle)
-- **Damage**: Увеличен с 2.71 до 2.85
-- **CostOfBullet**: Увеличен с 1.65 до 1.765
+## ✨ Key Features
 
-### 3. GEAR_Rifle_Auto (Malatack LX Assault Rifle)
-- **Damage**: Увеличен с 2.1875 до 3.0
-- **StaggerDamageMulti**: Уменьшен с 1.0 до 0.8
-- **PrecisionDamageMulti**: Уменьшен с 0.8 до 0.78
-- **DefaultClipSize**: Увеличен с 30 до 50
-- **DefaultReloadTime**: Увеличен с 1.8 до 2.4
-- **CostOfBullet**: Увеличен с 1.47 до 2.0
+- **26 weapon archetypes rebalanced** - Every weapon type receives meaningful improvements
+- **Enhanced turret systems** - All sentries get major upgrades including 90° detection angles and improved rotation speed
+- **Better flashlights** - Increased range and improved visibility for all flashlight types  
+- **Improved melee combat** - Reduced stamina costs and increased damage for spears and bats
+- **Maintained game balance** - Changes preserve the core GTFO experience while expanding viable options
 
-### 4. GEAR_Rifle_Heavy_Auto_Special (Malatack HXC Heavy Assault Rifle)
-- **CostOfBullet**: Уменьшен с 1.92 до 1.84
+## 🔧 Major Changes
 
-### 5. GEAR_SMG_Semi (Drekker CLR Short Rifle → преобразован в Burst)
-- **FireMode**: Изменён с 0 (Semi) на 1 (Burst)
-- **Damage**: Увеличен с 4.81 до 7.0
-- **DamageFalloff.x**: Увеличен с 8.0 до 10.0
-- **CostOfBullet**: Увеличен с 1.38 до 2.32
-- **ShotDelay**: Уменьшен с 0.04 до 0.01
-- **BurstDelay**: Установлен на 0.15
-- **BurstShotCount**: Установлен на 3
+### Assault Rifles & SMGs
+- **Auto Rifle**: Damage increased from 2.19 to 3.0, magazine size 30→50
+- **Burst Rifle**: Damage boosted from 2.71 to 2.85
+- **Heavy SMG**: Damage increased 2.45→2.84, magazine size 33→50, faster reload, piercing limit increased to 3
 
-### 6. GEAR_SMG_Burst (Van Auken LTC5 SMG)
-- **DamageFalloff.x**: Уменьшен с 10.0 до 8.0
-- **DamageFalloff.y**: Уменьшен с 65.0 до 60.0
+### Snipers & DMRs  
+- **Sniper Rifle**: Magazine size increased 2→3, higher bullet cost for balance
+- **DMR**: Damage increased 7.51→8.0, magazine reduced 12→8 for balance
 
-### 7. GEAR_SMG_Heavy_Auto (Accrat ND6 Heavy SMG)
-- **Damage**: Увеличен с 2.45 до 2.84
-- **DamageFalloff.x**: Уменьшен с 7.0 до 6.0
-- **DamageFalloff.y**: Уменьшен с 60.0 до 55.0
-- **PrecisionDamageMulti**: Увеличен с 0.8 до 0.91
-- **DefaultClipSize**: Увеличен с 33 до 50
-- **DefaultReloadTime**: Уменьшен с 1.55 до 1.4
-- **CostOfBullet**: Уменьшен с 1.5 до 1.3
-- **ShotDelay**: Уменьшен с 0.078 до 0.066
+### Sentries (Major Overhaul)
+- **All turrets**: Detection angle increased to 90°, rotation speed improved to 10.0
+- **Sniper Sentry**: Added piercing bullets, reduced fire delay
+- **Burst Sentry**: Added piercing with damage limit of 2
+- **Auto Sentry**: Piercing limit increased to 3
 
-### 9. GEAR_DMR_Semi (TR22 Hanaway DMR)
-- **Damage**: Увеличен с 7.51 до 8.0
-- **DamageFalloff.x**: Уменьшен с 50.0 до 30.0
-- **DamageFalloff.y**: Уменьшен с 100.0 до 80.0
-- **PrecisionDamageMulti**: Уменьшен с 0.87 до 0.85
-- **DefaultClipSize**: Уменьшен с 12 до 8
-- **DefaultReloadTime**: Увеличен с 2.3 до 2.4
-- **CostOfBullet**: Увеличен с 5.89 до 10.9
-- **ShotDelay**: Увеличен с 0.25 до 0.35
+### Quality of Life
+- **Flashlights**: Range increased across all types (10-30m depending on variant)
+- **Melee**: Spear and bat damage increased, stamina costs reduced/eliminated
 
-### 10. GEAR_Sniper_Semi (Köning PR 11 Sniper Rifle)
-- **DefaultClipSize**: Увеличен с 2 до 3
-- **CostOfBullet**: Увеличен с 17.5 до 23.0
+## 📋 Installation
 
-### 11. GEAR_Shotgun_Semi (Buckland S870 Shotgun)
-- **Damage**: Увеличен с 3.01 до 3.1
-- **DamageFalloff.x**: Увеличен с 4.0 до 5.0
+### Automatic (Recommended)
+1. Install via [Thunderstore Mod Manager](https://www.overwolf.com/app/thunderstore-thunderstore_mod_manager) or [r2modman](https://gtfo.thunderstore.io/package/ebkr/r2modman/)
+2. Search for "suslow rebalance mod" 
+3. Click Install
 
-### 12. GEAR_Sawed-Off_Shotgun_Semi (Buckland SBS III Sawed-Off Shotgun)
-- **Damage**: Увеличен с 3.8 до 3.9
-- **DefaultClipSize**: Уменьшен с 4 до 3
+### Manual Installation
+1. Install [BepInEx for GTFO](https://gtfo.thunderstore.io/package/BepInEx/BepInExPack_GTFO/)
+2. Install [MTFO](https://gtfo.thunderstore.io/package/dakkhuza/MTFO/) 
+3. Download this mod and extract to `BepInEx/plugins/`
 
-### 13. GEAR_Bullpup_Auto (Accrat Golok DA Bullpup Rifle)
-- **Damage**: Увеличен с 2.1 до 2.84
-- **StaggerDamageMulti**: Уменьшен с 1.0 до 0.8
-- **DefaultClipSize**: Увеличен с 40 до 45
-- **CostOfBullet**: Увеличен с 1.5 до 1.87
-- **ShotDelay**: Увеличен с 0.055 до 0.0705
-- **HipFireSpread**: Уменьшен с 2.5 до 2.0
+## ⚠️ Compatibility
 
-### 14. GEAR_SentryGun_Semi_sniper (Sniper Sentry)
-- **Damage**: Увеличен с 48.1 до 50.1
-- **DamageFalloff.x**: Увеличен с 30.0 до 40.0
-- **CostOfBullet**: Уменьшен с 16.0 до 14.5
-- **ShotDelay**: Уменьшен с 2.6 до 1.9
-- **PiercingBullets**: Изменён с false на true
-- **Sentry_StartFireDelay**: Уменьшен с 2.8 до 0.6
-- **Sentry_RotationSpeed**: Увеличен с 6.0 до 10.0
-- **Sentry_DetectionMaxAngle**: Увеличен с 20.0 до 90.0
-- **Sentry_LegacyEnemyDetection**: Изменён с false на true
-- **Sentry_StartFireDelayTagMulti**: Изменён с 0.5 на 0.8
-- **Sentry_DamageTagMulti**: Увеличен с 1.0 до 1.5
-- **Sentry_StaggerDamageTagMulti**: Увеличен с 1.0 до 2.0
-- **Sentry_CostOfBulletTagMulti**: Уменьшен с 0.7 до 0.4
-- **Sentry_ShotDelayTagMulti**: Уменьшен с 0.7 до 0.6
+- **Required**: MTFO 4.6.2+
+- **Compatible**: Most mods that don't modify the same DataBlocks
+- **May conflict**: Other weapon rebalance mods, custom rundowns that modify weapon stats
 
-### 15. GEAR_SentryGun_Burst (Mechatronic SGB3 Burst Sentry)
-- **DamageFalloff.x**: Увеличен с 10.0 до 20.0
-- **DamageFalloff.y**: Увеличен с 40.0 до 80.0
-- **CostOfBullet**: Увеличен с 2.05 до 2.26
-- **BurstDelay**: Уменьшен с 1.0 до 0.5
-- **PiercingBullets**: Изменён с false на true
-- **PiercingDamageCountLimit**: Установлен на 2
-- **Sentry_StartFireDelay**: Уменьшен с 1.0 до 0.5
-- **Sentry_RotationSpeed**: Увеличен с 4.0 до 10.0
-- **Sentry_DetectionMaxAngle**: Увеличен с 30.0 до 90.0
-- **Sentry_LegacyEnemyDetection**: Изменён с true на false
-- **Sentry_StartFireDelayTagMulti**: Изменён с 1.0 на 0.8
-- **Sentry_RotationSpeedTagMulti**: Изменён с 1.0 на 1.5
-- **Sentry_DamageTagMulti**: Увеличен с 1.0 до 1.5
-- **Sentry_StaggerDamageTagMulti**: Увеличен с 1.0 до 2.0
-- **Sentry_CostOfBulletTagMulti**: Уменьшен с 1.0 до 0.6
-- **Sentry_ShotDelayTagMulti**: Уменьшен с 1.0 до 0.8
+## 🔄 Complete Changelog
 
-### 16. GEAR_SentryGun_Auto_staggering (Rad Labs Meduza HEL Auto Sentry)
-- **Damage**: Увеличен с 0.8 до 1.0
-- **DamageFalloff.x**: Увеличен с 10.0 до 18.0
-- **CostOfBullet**: Увеличен с 0.7 до 1.1
-- **PiercingDamageCountLimit**: Увеличен с 2 до 3
-- **Sentry_StartFireDelay**: Уменьшен с 1.0 до 0.5
-- **Sentry_RotationSpeed**: Увеличен с 4.0 до 10.0
-- **Sentry_DetectionMaxRange**: Уменьшен с 25.0 до 20.0
-- **Sentry_DetectionMaxAngle**: Увеличен с 30.0 до 90.0
-- **Sentry_StartFireDelayTagMulti**: Изменён с 1.0 на 0.8
-- **Sentry_DamageTagMulti**: Увеличен с 1.0 до 2.0
-- **Sentry_StaggerDamageTagMulti**: Увеличен с 1.0 до 3.0
-- **Sentry_CostOfBulletTagMulti**: Уменьшен с 1.0 до 0.5
+<details>
+<summary>Click to expand full changelog</summary>
 
-### 17. GEAR_SentryGun_Shotgun_Semi (Mechatronic B5 LFR Shotgun Sentry)
-- **Damage**: Уменьшен с 3.01 до 2.21
-- **StaggerDamageMulti**: Увеличен с 1.0 до 2.0
-- **CostOfBullet**: Увеличен с 1.58 до 1.7
-- **PiercingBullets**: Изменён с false на true
-- **PiercingDamageCountLimit**: Установлен на 2
-- **ShotgunBulletCount**: Увеличен c 5 до 10
-- **ShotgunBulletSpread**: Уменьшен с 2 до 1
-- **Sentry_RotationSpeed**: Увеличен с 8.0 до 10.0
-- **Sentry_DetectionMaxRange**: Увеличен с 10.0 до 12.0
-- **Sentry_DetectionMaxAngle**: Увеличен с 40.0 до 90.0
-- **Sentry_ForceAimTowardsBody**: Изменён с false на true
-- **Sentry_DamageTagMulti**: Увеличен с 1.0 до 1.5
-- **Sentry_StaggerDamageTagMulti**: Увеличен с 1.0 до 2.0
+### Assault Rifles
+- **GEAR_Rifle_Semi (Drekker PRES MOD 556 Rifle)**:
+  - Magazine increased from 14 to 20
+  - Reload time increased from 1.9s to 2.0s
+  - Bullet cost increased from 3.8 to 3.83
+- **GEAR_Rifle_Burst (Malatack CH 4 Burst Rifle)**:
+  - Damage increased from 2.71 to 2.85
+  - Bullet cost increased from 1.65 to 1.765
+- **GEAR_Rifle_Auto (Malatack LX Assault Rifle)**:
+  - Damage increased from 2.1875 to 3.0
+  - Stagger damage multiplier reduced from 1.0 to 0.8
+  - Precision damage multiplier reduced from 0.8 to 0.78
+  - Magazine increased from 30 to 50
+  - Reload time increased from 1.8s to 2.4s
+  - Bullet cost increased from 1.47 to 2.0
+- **GEAR_Rifle_Heavy_Auto_Special (Malatack HXC Heavy Assault Rifle)**:
+  - Bullet cost reduced from 1.92 to 1.84
 
-### 18. GEAR_Revolver_Semi (Bataldo 3RB HEL Revolver)
-- **CostOfBullet**: Увеличен с 5.74 до 6.2
+### SMGs
+- **GEAR_SMG_Semi (Drekker CLR Short Rifle)**:
+  - Fire mode changed from Semi to Burst
+  - Damage increased from 4.81 to 7.0
+  - Damage falloff start increased from 8.0 to 10.0
+  - Bullet cost increased from 1.38 to 2.32
+  - Shot delay reduced from 0.04s to 0.01s
+  - Burst delay set to 0.15s
+  - Burst shot count set to 3
+- **GEAR_SMG_Burst (Van Auken LTC5 SMG)**:
+  - Damage falloff start reduced from 10.0 to 8.0
+  - Damage falloff end reduced from 65.0 to 60.0
+- **GEAR_SMG_Heavy_Auto (Accrat ND6 Heavy SMG)**:
+  - Damage increased from 2.45 to 2.84
+  - Damage falloff start reduced from 7.0 to 6.0
+  - Damage falloff end reduced from 60.0 to 55.0
+  - Piercing bullets enabled
+  - Piercing damage count limit set to 3
+  - Precision damage multiplier increased from 0.8 to 0.91
+  - Magazine increased from 33 to 50
+  - Reload time reduced from 1.55s to 1.4s
+  - Bullet cost reduced from 1.5 to 1.3
+  - Shot delay reduced from 0.078s to 0.066s
 
-### 19. GEAR_Revolver_Semi_Special (Mastaba R66 Revolver)
-- **DefaultClipSize**: Увеличен с 20 до 21
+### Snipers & DMRs
+- **GEAR_DMR_Semi (TR22 Hanaway DMR)**:
+  - Damage increased from 7.51 to 8.0
+  - Damage falloff start reduced from 50.0 to 30.0
+  - Damage falloff end reduced from 100.0 to 80.0
+  - Precision damage multiplier reduced from 0.87 to 0.85
+  - Magazine reduced from 12 to 8
+  - Reload time increased from 2.3s to 2.4s
+  - Bullet cost increased from 5.89 to 10.9
+  - Shot delay increased from 0.25s to 0.35s
+- **GEAR_Sniper_Semi (Köning PR 11 Sniper Rifle)**:
+  - Magazine increased from 2 to 3
+  - Bullet cost increased from 17.5 to 23.0
 
-### 20. GEAR_Shotgun_Pump (Buckland Custom K330 Slug Shotgun)
-- **CostOfBullet**: Увеличен с 12.0 до 11.5
-- **ShotDelay**: Уменьшен с 0.75 до 0.70
+### Shotguns
+- **GEAR_Shotgun_Semi (Buckland S870 Shotgun)**:
+  - Damage increased from 3.01 to 3.1
+  - Damage falloff start increased from 4.0 to 5.0
+- **GEAR_Sawed-Off_Shotgun_Semi (Buckland SBS III Sawed-Off Shotgun)**:
+  - Damage increased from 3.8 to 3.9
+  - Magazine reduced from 4 to 3
+- **GEAR_Shotgun_Pump (Buckland Custom K330 Slug Shotgun)**:
+  - Bullet cost reduced from 12.0 to 11.5
+  - Shot delay reduced from 0.75s to 0.70s
+- **GEAR_Shotgun_Choke (Buckland XDIST2 Choke Mod Shotgun)**:
+  - Precision damage multiplier reduced from 0.7333 to 0.6
+  - Bullet cost increased from 16.3 to 20.6
+- **GEAR_Shotgun_DoubleBarrel (Buckland AF6 Combat Shotgun)**:
+  - Bullet cost reduced from 10.0 to 9.55
 
-### 21. GEAR_Shotgun_Choke (Buckland XDIST2 Choke Mod Shotgun)
-- **PrecisionDamageMulti**: Уменьшен с 0.7333 до 0.6
-- **CostOfBullet**: Увеличен с 16.3 до 20.6
+### Bullpup Rifles
+- **GEAR_Bullpup_Auto (Accrat Golok DA Bullpup Rifle)**:
+  - Damage increased from 2.1 to 2.84
+  - Stagger damage multiplier reduced from 1.0 to 0.8
+  - Magazine increased from 40 to 45
+  - Bullet cost increased from 1.5 to 1.87
+  - Shot delay increased from 0.055s to 0.0705s
+  - Hip fire spread reduced from 2.5 to 2.0
 
-### 22. GEAR_Shotgun_DoubleBarrel (Buckland AF6 Combat Shotgun)
-- **CostOfBullet**: Уменьшен с 10.0 до 9.55
+### Sentries
+- **All turrets**:
+  - Detection angles increased from 20-40° to 90°
+  - Rotation speed increased from 4-8 to 10
+- **GEAR_SentryGun_Semi_sniper (Sniper Sentry)**:
+  - Damage increased from 48.1 to 50.1
+  - Damage falloff start increased from 30.0 to 40.0
+  - Bullet cost reduced from 16.0 to 14.5
+  - Shot delay reduced from 2.6s to 1.9s
+  - Piercing bullets enabled
+  - Start fire delay reduced from 2.8s to 0.6s
+  - Rotation speed increased from 6.0 to 10.0
+  - Detection max angle increased from 20.0 to 90.0
+  - Legacy enemy detection enabled
+  - Start fire delay tag multiplier increased from 0.5 to 0.8
+  - Damage tag multiplier increased from 1.0 to 1.5
+  - Stagger damage tag multiplier increased from 1.0 to 2.0
+  - Bullet cost tag multiplier reduced from 0.7 to 0.4
+  - Shot delay tag multiplier reduced from 0.7 to 0.6
+- **GEAR_SentryGun_Burst (Mechatronic SGB3 Burst Sentry)**:
+  - Damage falloff start increased from 10.0 to 20.0
+  - Damage falloff end increased from 40.0 to 80.0
+  - Bullet cost increased from 2.05 to 2.26
+  - Burst delay reduced from 1.0s to 0.5s
+  - Piercing bullets enabled
+  - Piercing damage count limit set to 2
+  - Start fire delay reduced from 1.0s to 0.5s
+  - Rotation speed increased from 4.0 to 10.0
+  - Detection max angle increased from 30.0 to 90.0
+  - Legacy enemy detection disabled
+  - Start fire delay tag multiplier set to 0.8
+  - Rotation speed tag multiplier set to 1.5
+  - Damage tag multiplier increased from 1.0 to 1.5
+  - Stagger damage tag multiplier increased from 1.0 to 2.0
+  - Bullet cost tag multiplier reduced from 1.0 to 0.6
+  - Shot delay tag multiplier reduced from 1.0 to 0.8
+- **GEAR_SentryGun_Auto_staggering (Rad Labs Meduza HEL Auto Sentry)**:
+  - Damage increased from 0.8 to 1.0
+  - Damage falloff start increased from 10.0 to 18.0
+  - Bullet cost increased from 0.7 to 1.1
+  - Piercing damage count limit increased from 2 to 3
+  - Start fire delay reduced from 1.0s to 0.5s
+  - Rotation speed increased from 4.0 to 10.0
+  - Detection max range reduced from 25.0 to 20.0
+  - Detection max angle increased from 30.0 to 90.0
+  - Start fire delay tag multiplier set to 0.8
+  - Damage tag multiplier increased from 1.0 to 2.0
+  - Stagger damage tag multiplier increased from 1.0 to 3.0
+  - Bullet cost tag multiplier reduced from 1.0 to 0.5
+- **GEAR_SentryGun_Shotgun_Semi (Mechatronic B5 LFR Shotgun Sentry)**:
+  - Damage reduced from 3.01 to 2.21
+  - Stagger damage multiplier increased from 1.0 to 2.0
+  - Bullet cost increased from 1.58 to 1.7
+  - Piercing bullets enabled
+  - Piercing damage count limit set to 2
+  - Shotgun bullet count increased from 5 to 10
+  - Shotgun bullet spread reduced from 2 to 1
+  - Rotation speed increased from 8.0 to 10.0
+  - Detection max range increased from 10.0 to 12.0
+  - Detection max angle increased from 40.0 to 90.0
+  - Force aim towards body enabled
+  - Damage tag multiplier increased from 1.0 to 1.5
+  - Stagger damage tag multiplier increased from 1.0 to 2.0
 
-### 23. GEAR_Special_Semi_HighDamage (Shelling Arid 5 High Caliber Pistol)
-- **Damage**: Увеличен с 14.21 до 15.25
+### Revolvers
+- **GEAR_Revolver_Semi (Bataldo 3RB HEL Revolver)**:
+  - Bullet cost increased from 5.74 to 6.2
+- **GEAR_Revolver_Semi_Special (Mastaba R66 Revolver)**:
+  - Magazine increased from 20 to 21
 
-### 24. GEAR_Special_Semi_Precision (Drekker DEL P1 Precision Rifle)
-- **CostOfBullet**: Увеличен с 10.0 до 10.8
+### Special Weapons
+- **GEAR_Special_Semi_HighDamage (Shelling Arid 5 High Caliber Pistol)**:
+  - Damage increased from 14.21 to 15.25
+- **GEAR_Special_Semi_Precision (Drekker DEL P1 Precision Rifle)**:
+  - Bullet cost increased from 10.0 to 10.8
+- **GEAR_Special_Semi_Sniper (Drekker DEL P1 Precision Rifle - Thermal Scope)**:
+  - Damage falloff start increased from 30.0 to 40.0
+  - Damage falloff end increased from 70.0 to 90.0
+  - Precision damage multiplier increased from 1.3 to 2.15
+  - Magazine increased from 10 to 12
+- **GEAR_Special_Semi_Heavy (Shelling Arid-5 High Caliber Pistol)**:
+  - Damage increased from 30.1 to 33
 
-### 25. GEAR_Special_Semi_Sniper (Drekker DEL P1 Precision Rifle - Thermal Scope)
-- **DamageFalloff.x**: Увеличен с 30.0 до 40.0
-- **DamageFalloff.y**: Увеличен с 70.0 до 90.0
-- **PrecisionDamageMulti**: Увеличен с 1.3 до 2.15
-- **DefaultClipSize**: Увеличен с 10 до 12
+### Equipment
+- **GunLight_A (Short Range Flashlight)**:
+  - Range increased from 8.0 to 10.0
+  - Blue color tint increased from 0.731 to 0.831
+- **GunLight_E (Medium Range #2 Flashlight)**:
+  - Range increased from 13.0 to 15.0
+  - Intensity reduced from 0.5 to 0.45
+  - Cookie texture changed to "FlashlightRegularCookie_01.tga"
+  - Color red changed from 0.86 to 1.0
+  - Color green changed from 1.0 to 0.991
+  - Color blue changed from 0.988 to 0.933
+- **GunLight_B (Medium Range #1 Flashlight)**:
+  - Range increased from 15.0 to 16.0
+- **GunLight_D (Long Range #1 Flashlight)**:
+  - Range increased from 16.0 to 18.0
+- **GunLight_C (Long Range #2 Flashlight)**:
+  - Range increased from 20.0 to 22.0
+- **Consumable_MediumFlashlight (Portable Flashlight)**:
+  - Range increased from 25.0 to 30.0
+- **Spear**:
+  - Light attack damage increased from 2.0 to 2.5
+  - Charged attack stamina cost in combat reduced from 0.05 to 0.0
+  - Charged attack stamina cost out of combat reduced from 0.05 to 0.0
+  - Push stamina cost in combat reduced from 0.05 to 0.0
+  - Push stamina cost out of combat reduced from 0.05 to 0.0
+- **Bat**:
+  - Light attack damage increased from 3.0 to 4.0
+  - Light stagger multiplier reduced from 5.0 to 4.0
 
-### 26. GEAR_Special_Semi_Heavy (Shelling Arid-5 High Caliber Pistol)
-- **Damage**: Увеличен с 30.1 до 33
+</details>
+
+## 🐛 Known Issues
+
+- Some weapons may feel overpowered initially - this is intentional to bring them up to viable levels
+- Turret improvements may make some sections easier than intended
+
+## 💬 Feedback & Support
+
+Found a bug or have balance suggestions? 
+- Open an issue on [GitHub](https://github.com/your-username/gtfo-suslow-rebalance-mod)
+
+## 📄 License
+
+This mod is available under the MIT License.
 
 ---
 
-## Изменения в настройках фонарей
-
-### 1. GunLight_A (Short Range Flashlight)
-- **range**: Увеличен с 8.0 до 10.0
-- **color.b**: Увеличен с 0.7311321 до 0.8311321
-
-### 2. GunLight_E (Medium Range #2 Flashlight)
-- **range**: Увеличен с 13.0 до 15.0
-- **intensity**: Уменьшен с 0.5 до 0.45
-- **cookie**: Изменён с "FlashlightRegularCookie_05.tga" на "FlashlightRegularCookie_01.tga"
-- **color**: Полностью изменён:
-  - **r**: Изменён с 0.86 до 1.0
-  - **g**: Изменён с 1.0 до 0.9909915
-  - **b**: Изменён с 0.987599432 до 0.9326415
-
-### 3. GunLight_B (Medium Range #1 Flashlight)
-- **range**: Увеличен с 15.0 до 16.0
-
-### 4. GunLight_D (Long Range #1 Flashlight)
-- **range**: Увеличен с 16.0 до 18.0
-
-### 5. GunLight_C (Long Range #2 Flashlight)
-- **range**: Увеличен с 20.0 до 22.0
-
-### 6. Consumable_MediumFlashlight (Portable Flashlight)
-- **range**: Увеличен с 25.0 до 30.0
-
----
-
-## Изменения в архетипах ближнего боя
-
-### 1. Spear (Копьё)
-- **LightAttackDamage**: Увеличен с 2.0 до 2.5
-- **ChargedAttackStaminaCost**: 
-  - **baseStaminaCostInCombat**: Уменьшен с 0.05 до 0.0
-  - **baseStaminaCostOutOfCombat**: Уменьшен с 0.05 до 0.0
-- **PushStaminaCost**:
-  - **baseStaminaCostInCombat**: Уменьшен с 0.05 до 0.0
-  - **baseStaminaCostOutOfCombat**: Уменьшен с 0.05 до 0.0
-
-### 2. Bat (Бита)
-- **LightAttackDamage**: Увеличен с 3.0 до 4.0
-- **LightStaggerMulti**: Уменьшен с 5.0 до 4.0
-
----
-
-## Основные изменения
-
-### Турели
-- Все турели получили значительные улучшения в скорости поворота (до 10.0)
-- Увеличен угол обнаружения до 90° для всех турелей
-- Добавлено пробитие для всех типов турелей
-- Улучшены бонусы от био-трекера
-
-### Оружие
-- Автоматическое оружие получило повышение урона и улучшенную эффективность
-- Снайперское оружие стало более универсальным
-- Дробовики получили улучшения в точности и эффективности
-- Ближний бой стал менее затратным по выносливости
-
-### Освещение
-- Все типы фонарей получили увеличенную дальность
-- Улучшена видимость и цветопередача
+*Made with ❤️ for the GTFO community*

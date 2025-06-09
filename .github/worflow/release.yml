@@ -1,0 +1,59 @@
+name: Build Release Package
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+
+jobs:
+  build-release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Get version from tag
+      id: get_version
+      run: |
+        if [[ "${{ github.ref }}" == refs/tags/* ]]; then
+          echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+        else
+          echo "version=1.0.0" >> $GITHUB_OUTPUT
+        fi
+
+    - name: Update manifest version
+      run: |
+        VERSION="${{ steps.get_version.outputs.version }}"
+        sed -i "s/\"version_number\": \".*\"/\"version_number\": \"$VERSION\"/" manifest.json
+
+    - name: Create release package
+      run: |
+        mkdir -p release
+        cp -r BepInEx/plugins/suslow_rebalance_mod release/
+        cp icon.png release/
+        cp README.md release/
+        cp manifest.json release/
+        cd release
+        zip -r ../suslow_rebalance_mod-${{ steps.get_version.outputs.version }}.zip .
+
+    - name: Create GitHub Release
+      if: startsWith(github.ref, 'refs/tags/')
+      uses: softprops/action-gh-release@v1
+      with:
+        files: |
+          suslow_rebalance_mod-${{ steps.get_version.outputs.version }}.zip
+        body: |
+          ## Installation
+          
+          1. Download the zip file below
+          2. Install [BepInEx for GTFO](https://gtfo.thunderstore.io/package/BepInEx/BepInExPack_GTFO/)
+          3. Install [MTFO](https://gtfo.thunderstore.io/package/dakkhuza/MTFO/)
+          4. Extract this mod to your `BepInEx/plugins/` folder
+          
+          Or install via [Thunderstore Mod Manager](https://www.overwolf.com/app/thunderstore-thunderstore_mod_manager)
+        draft: false
+        prerelease: false
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

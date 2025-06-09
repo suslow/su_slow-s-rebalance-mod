@@ -1,9 +1,9 @@
 {
     "name": "suslow_rebalance_mod",
     "version_number": "1.0.0",
-    "website_url": "https://github.com/suslow/suslow-rebalance-mod",
-    "description": "This overhaul is designed to balance GTFO better and increase the variety of viable weapons.",
+    "website_url": "https://github.com/suslow/gtfo-suslow-rebalance-mod",
+    "description": "This rework aims to improve GTFO balance, make life easier, and increase the variety of usable weapons.",
     "dependencies": [
-	"dakkhuza-MTFO-4.6.2"
+        "dakkhuza-MTFO-4.6.2"
     ]
 }
