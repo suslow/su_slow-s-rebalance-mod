@@ -12,27 +12,6 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Improved melee combat** - Reduced stamina costs and increased damage for spears and bats
 - **Maintained game balance** - Changes preserve the core GTFO experience while expanding viable options
 
-## 🔧 Major Changes
-
-### Assault Rifles & SMGs
-- **Auto Rifle**: Damage increased from 2.19 to 3.0, magazine size 30→50
-- **Burst Rifle**: Damage boosted from 2.71 to 2.85
-- **Heavy SMG**: Damage increased 2.45→2.84, magazine size 33→50, faster reload, piercing limit increased to 3
-
-### Snipers & DMRs  
-- **Sniper Rifle**: Magazine size increased 2→3, higher bullet cost for balance
-- **DMR**: Damage increased 7.51→8.0, magazine reduced 12→8 for balance
-
-### Sentries (Major Overhaul)
-- **All turrets**: Detection angle increased to 90°, rotation speed improved to 10.0
-- **Sniper Sentry**: Added piercing bullets, reduced fire delay
-- **Burst Sentry**: Added piercing with damage limit of 2
-- **Auto Sentry**: Piercing limit increased to 3
-
-### Quality of Life
-- **Flashlights**: Range increased across all types (10-30m depending on variant)
-- **Melee**: Spear and bat damage increased, stamina costs reduced/eliminated
-
 ## 📋 Installation
 
 ### Automatic (Recommended)
@@ -56,198 +35,148 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 <details>
 <summary>Click to expand full changelog</summary>
 
-### Assault Rifles
-- **GEAR_Rifle_Semi (Drekker PRES MOD 556 Rifle)**:
-  - Magazine increased from 14 to 20
-  - Reload time increased from 1.9s to 2.0s
-  - Bullet cost increased from 3.8 to 3.83
-- **GEAR_Rifle_Burst (Malatack CH 4 Burst Rifle)**:
-  - Damage increased from 2.71 to 2.85
-  - Bullet cost increased from 1.65 to 1.765
-- **GEAR_Rifle_Auto (Malatack LX Assault Rifle)**:
-  - Damage increased from 2.1875 to 3.0
-  - Stagger damage multiplier reduced from 1.0 to 0.8
-  - Precision damage multiplier reduced from 0.8 to 0.78
-  - Magazine increased from 30 to 50
-  - Reload time increased from 1.8s to 2.4s
-  - Bullet cost increased from 1.47 to 2.0
-- **GEAR_Rifle_Heavy_Auto_Special (Malatack HXC Heavy Assault Rifle)**:
-  - Bullet cost reduced from 1.92 to 1.84
+## Complete Changelog
 
-### SMGs
-- **GEAR_SMG_Semi (Drekker CLR Short Rifle)**:
-  - Fire mode changed from Semi to Burst
-  - Damage increased from 4.81 to 7.0
-  - Damage falloff start increased from 8.0 to 10.0
-  - Bullet cost increased from 1.38 to 2.32
-  - Shot delay reduced from 0.04s to 0.01s
-  - Burst delay set to 0.15s
-  - Burst shot count set to 3
-- **GEAR_SMG_Burst (Van Auken LTC5 SMG)**:
-  - Damage falloff start reduced from 10.0 to 8.0
-  - Damage falloff end reduced from 65.0 to 60.0
-- **GEAR_SMG_Heavy_Auto (Accrat ND6 Heavy SMG)**:
-  - Damage increased from 2.45 to 2.84
-  - Damage falloff start reduced from 7.0 to 6.0
-  - Damage falloff end reduced from 60.0 to 55.0
-  - Piercing bullets enabled
-  - Piercing damage count limit set to 3
-  - Precision damage multiplier increased from 0.8 to 0.91
-  - Magazine increased from 33 to 50
-  - Reload time reduced from 1.55s to 1.4s
-  - Bullet cost reduced from 1.5 to 1.3
-  - Shot delay reduced from 0.078s to 0.066s
+### **MAIN WEAPONS**
 
-### Snipers & DMRs
-- **GEAR_DMR_Semi (TR22 Hanaway DMR)**:
-  - Damage increased from 7.51 to 8.0
-  - Damage falloff start reduced from 50.0 to 30.0
-  - Damage falloff end reduced from 100.0 to 80.0
-  - Precision damage multiplier reduced from 0.87 to 0.85
-  - Magazine reduced from 12 to 8
-  - Reload time increased from 2.3s to 2.4s
-  - Bullet cost increased from 5.89 to 10.9
-  - Shot delay increased from 0.25s to 0.35s
-- **GEAR_Sniper_Semi (Köning PR 11 Sniper Rifle)**:
-  - Magazine increased from 2 to 3
-  - Bullet cost increased from 17.5 to 23.0
+#### **Malatack HXC Heavy Assault Rifle (GEAR_Rifle_Semi | ID: 1)**
+- **Magazine Size**: 14 → 20 rounds (+43%)
+- **Reload Time**: 1.9s → 2.0s (+0.1s)
+- **Ammo Cost**: 3.8 → 3.83 (minimal increase)
 
-### Shotguns
-- **GEAR_Shotgun_Semi (Buckland S870 Shotgun)**:
-  - Damage increased from 3.01 to 3.1
-  - Damage falloff start increased from 4.0 to 5.0
-- **GEAR_Sawed-Off_Shotgun_Semi (Buckland SBS III Sawed-Off Shotgun)**:
-  - Damage increased from 3.8 to 3.9
-  - Magazine reduced from 4 to 3
-- **GEAR_Shotgun_Pump (Buckland Custom K330 Slug Shotgun)**:
-  - Bullet cost reduced from 12.0 to 11.5
-  - Shot delay reduced from 0.75s to 0.70s
-- **GEAR_Shotgun_Choke (Buckland XDIST2 Choke Mod Shotgun)**:
-  - Precision damage multiplier reduced from 0.7333 to 0.6
-  - Bullet cost increased from 16.3 to 20.6
-- **GEAR_Shotgun_DoubleBarrel (Buckland AF6 Combat Shotgun)**:
-  - Bullet cost reduced from 10.0 to 9.55
+#### **MALATACK CH 4 Burst Rifle (GEAR_Rifle_Burst | ID: 3)**
+- **Damage**: 2.71 → 2.85 (+5%)
+- **Ammo Cost**: 1.65 → 1.765 (+7%)
 
-### Bullpup Rifles
-- **GEAR_Bullpup_Auto (Accrat Golok DA Bullpup Rifle)**:
-  - Damage increased from 2.1 to 2.84
-  - Stagger damage multiplier reduced from 1.0 to 0.8
-  - Magazine increased from 40 to 45
-  - Bullet cost increased from 1.5 to 1.87
-  - Shot delay increased from 0.055s to 0.0705s
-  - Hip fire spread reduced from 2.5 to 2.0
+#### **Malatack LX Assault Rifle (GEAR_Rifle_Auto | ID: 5)**
+- **Damage**: 2.19 → 3.0 (**+37% damage increase**)
+- **Magazine Size**: 30 → 50 rounds (**+67% capacity**)
+- **Reload Time**: 1.8s → 2.4s (+0.6s)
+- **Ammo Cost**: 1.47 → 2.0 (+0.53)
+- **Stagger Multiplier**: 1.0 → 0.8 (-20%)
+- **Precision Multiplier**: 0.8 → 0.78 (-2.5%)
 
-### Sentries
-- **All turrets**:
-  - Detection angles increased from 20-40° to 90°
-  - Rotation speed increased from 4-8 to 10
-- **GEAR_SentryGun_Semi_sniper (Sniper Sentry)**:
-  - Damage increased from 48.1 to 50.1
-  - Damage falloff start increased from 30.0 to 40.0
-  - Bullet cost reduced from 16.0 to 14.5
-  - Shot delay reduced from 2.6s to 1.9s
-  - Piercing bullets enabled
-  - Start fire delay reduced from 2.8s to 0.6s
-  - Rotation speed increased from 6.0 to 10.0
-  - Detection max angle increased from 20.0 to 90.0
-  - Legacy enemy detection enabled
-  - Start fire delay tag multiplier increased from 0.5 to 0.8
-  - Damage tag multiplier increased from 1.0 to 1.5
-  - Stagger damage tag multiplier increased from 1.0 to 2.0
-  - Bullet cost tag multiplier reduced from 0.7 to 0.4
-  - Shot delay tag multiplier reduced from 0.7 to 0.6
-- **GEAR_SentryGun_Burst (Mechatronic SGB3 Burst Sentry)**:
-  - Damage falloff start increased from 10.0 to 20.0
-  - Damage falloff end increased from 40.0 to 80.0
-  - Bullet cost increased from 2.05 to 2.26
-  - Burst delay reduced from 1.0s to 0.5s
-  - Piercing bullets enabled
-  - Piercing damage count limit set to 2
-  - Start fire delay reduced from 1.0s to 0.5s
-  - Rotation speed increased from 4.0 to 10.0
-  - Detection max angle increased from 30.0 to 90.0
-  - Legacy enemy detection disabled
-  - Start fire delay tag multiplier set to 0.8
-  - Rotation speed tag multiplier set to 1.5
-  - Damage tag multiplier increased from 1.0 to 1.5
-  - Stagger damage tag multiplier increased from 1.0 to 2.0
-  - Bullet cost tag multiplier reduced from 1.0 to 0.6
-  - Shot delay tag multiplier reduced from 1.0 to 0.8
-- **GEAR_SentryGun_Auto_staggering (Rad Labs Meduza HEL Auto Sentry)**:
-  - Damage increased from 0.8 to 1.0
-  - Damage falloff start increased from 10.0 to 18.0
-  - Bullet cost increased from 0.7 to 1.1
-  - Piercing damage count limit increased from 2 to 3
-  - Start fire delay reduced from 1.0s to 0.5s
-  - Rotation speed increased from 4.0 to 10.0
-  - Detection max range reduced from 25.0 to 20.0
-  - Detection max angle increased from 30.0 to 90.0
-  - Start fire delay tag multiplier set to 0.8
-  - Damage tag multiplier increased from 1.0 to 2.0
-  - Stagger damage tag multiplier increased from 1.0 to 3.0
-  - Bullet cost tag multiplier reduced from 1.0 to 0.5
-- **GEAR_SentryGun_Shotgun_Semi (Mechatronic B5 LFR Shotgun Sentry)**:
-  - Damage reduced from 3.01 to 2.21
-  - Stagger damage multiplier increased from 1.0 to 2.0
-  - Bullet cost increased from 1.58 to 1.7
-  - Piercing bullets enabled
-  - Piercing damage count limit set to 2
-  - Shotgun bullet count increased from 5 to 10
-  - Shotgun bullet spread reduced from 2 to 1
-  - Rotation speed increased from 8.0 to 10.0
-  - Detection max range increased from 10.0 to 12.0
-  - Detection max angle increased from 40.0 to 90.0
-  - Force aim towards body enabled
-  - Damage tag multiplier increased from 1.0 to 1.5
-  - Stagger damage tag multiplier increased from 1.0 to 2.0
+#### **Drekker CLR Short RifleDrekker CLR Short Rifle (GEAR_SMG_Semi | ID: 17)**
+- **Fire Mode**: Semi-Auto → **Burst Fire** (3-round burst)
+- **Damage**: 4.81 → 7.0 (**+45% damage increase**)
+- **Range**: 8m → 10m effective range
+- **Fire Rate**: Significantly increased (0.04s → 0.01s shot delay)
+- **Ammo Cost**: 1.38 → 2.32 (+68%)
+- **Burst Delay**: Added 0.15s between bursts
 
-### Revolvers
-- **GEAR_Revolver_Semi (Bataldo 3RB HEL Revolver)**:
-  - Bullet cost increased from 5.74 to 6.2
-- **GEAR_Revolver_Semi_Special (Mastaba R66 Revolver)**:
-  - Magazine increased from 20 to 21
+#### **ACCRAT ND6 Heavy SMG (GEAR_SMG_Heavy_Auto | ID: 69)**
+- **Piercing**: Now pierces through enemies (3 targets max)
+- **Damage Falloff**: 10m-65m → 8m-60m range
 
-### Special Weapons
-- **GEAR_Special_Semi_HighDamage (Shelling Arid 5 High Caliber Pistol)**:
-  - Damage increased from 14.21 to 15.25
-- **GEAR_Special_Semi_Precision (Drekker DEL P1 Precision Rifle)**:
-  - Bullet cost increased from 10.0 to 10.8
-- **GEAR_Special_Semi_Sniper (Drekker DEL P1 Precision Rifle - Thermal Scope)**:
-  - Damage falloff start increased from 30.0 to 40.0
-  - Damage falloff end increased from 70.0 to 90.0
-  - Precision damage multiplier increased from 1.3 to 2.15
-  - Magazine increased from 10 to 12
-- **GEAR_Special_Semi_Heavy (Shelling Arid-5 High Caliber Pistol)**:
-  - Damage increased from 30.1 to 33
+#### **ACCRAT GOLOK DA Bullpup Rifle (GEAR_Bullpup_Auto | ID: 49)**
+- **Damage**: 2.1 → 2.84 (**+35% damage increase**)
+- **Magazine Size**: 40 → 45 rounds (+12.5%)
+- **Fire Rate**: 0.055s → 0.0705s shot delay (+28% slower)
+- **Ammo Cost**: 1.5 → 1.87 (+25%)
+- **Hip Fire Accuracy**: 2.5 → 2.0 spread (+25% more accurate)
+- **Stagger Multiplier**: 1.0 → 0.8 (-20%)
 
-### Equipment
-- **GunLight_A (Short Range Flashlight)**:
-  - Range increased from 8.0 to 10.0
-  - Blue color tint increased from 0.731 to 0.831
-- **GunLight_E (Medium Range #2 Flashlight)**:
-  - Range increased from 13.0 to 15.0
-  - Intensity reduced from 0.5 to 0.45
-  - Cookie texture changed to "FlashlightRegularCookie_01.tga"
-  - Color red changed from 0.86 to 1.0
-  - Color green changed from 1.0 to 0.991
-  - Color blue changed from 0.988 to 0.933
-- **GunLight_B (Medium Range #1 Flashlight)**:
-  - Range increased from 15.0 to 16.0
-- **GunLight_D (Long Range #1 Flashlight)**:
-  - Range increased from 16.0 to 18.0
-- **GunLight_C (Long Range #2 Flashlight)**:
-  - Range increased from 20.0 to 22.0
-- **Consumable_MediumFlashlight (Portable Flashlight)**:
-  - Range increased from 25.0 to 30.0
-- **Spear**:
-  - Light attack damage increased from 2.0 to 2.5
-  - Charged attack stamina cost in combat reduced from 0.05 to 0.015
-  - Charged attack stamina cost out of combat reduced from 0.05 to 0.015
-  - Push stamina cost in combat reduced from 0.05 to 0.015
-  - Push stamina cost out of combat reduced from 0.05 to 0.015
-- **Bat**:
-  - Light attack damage increased from 3.0 to 4.0
-  - Light stagger multiplier reduced from 5.0 to 4.0
+---
+
+### **SPECIAL WEAPONS**
+
+#### **TR22 HANAWAY DMR (GEAR_DMR_Semi_v2 | ID: 25)**
+- **Damage**: 7.51 → 8.0 (+6.5%)
+- **Magazine Size**: 12 → 8 rounds (-33% capacity)
+- **Range**: 50m-100m → 30m-80m effective range (-40% range)
+- **Ammo Cost**: 5.89 → 10.9 (**+85% cost increase**)
+- **Fire Rate**: 0.25s → 0.35s shot delay (+40% slower)
+- **Precision Multiplier**: 0.87 → 0.85 (-2.3%)
+
+#### **KÖNING PR 11 Sniper Rifle (GEAR_Sniper_Semi_v2 | ID: 29)**
+- **Magazine Size**: 2 → 3 rounds (+50%)
+- **Ammo Cost**: 17.5 → 23 (+31%)
+
+#### **DREKKER DEL P1 Precision Rifle (GEAR_Precision_Rifle | ID: 79)**
+- **Range**: 30m-70m → 40m-90m effective range (+33% range)
+- **Magazine Size**: 10 → 12 rounds (+20%)
+- **Precision Multiplier**: 1.3 → 2.15 (**+65% headshot damage**)
+
+#### **SHELLING ARID 5 High Caliber Pistol (GEAR_HighCal_Pistol | ID: 80)**
+- **Damage**: 30.1 → 33.0 (+10%)
+
+#### **MASTABA R66 Revolver (GEAR_Revolver_Semi_v2 | ID: 37)**
+- **Damage**: 14.21 → 15.25 (+7%)
+
+#### **OMNECO LRG HEL Rifle (GEAR_HEL_Rifle_semi | ID: 65)**
+- **Ammo Cost**: 10.0 → 10.8 (+8%)
+
+#### **OMNECO EXP1 HEL Gun (GEAR_HEL_Gun - Mechinegun_Semi | ID: 21)**
+- **Ammo Cost**: 5.74 → 6.2 (+8%)
+
+#### **TECHMAN ARBALIST V Machine Gun (GEAR_MachineGun_Burst | ID: 22)**
+- **Magazine Size**: 20 → 21 rounds (+5%)
+
+#### **Malatack HXC (GEAR_Rifle_Heavy_Auto_Special | ID: 73)**
+- **Ammo Cost**: 1.92 → 1.84 (-4%)
+
+#### **BUCKLAND S870 Shotgun (GEAR_Shotgun_Semi_v2 | ID: 33)**
+- **Damage**: 3.01 → 3.1 (+3%)
+- **Range**: 4m → 5m effective range (+25%)
+
+#### **BATALDO CUSTOM K330 Slug Shotgun (GEAR_Shotgun_Slug_Semi | ID: 81)**
+- **Ammo Cost**: 12.0 → 11.5 (-4%)
+- **Fire Rate**: 0.75s → 0.70s shot delay (+7% faster)
+
+#### **BUCKLAND SBS III Sawed-off Shotgun (GEAR_Sawed-Off_Shotgun_Semi | ID: 45)**
+- **Magazine Size**: 4 → 3 rounds (-25%)
+
+#### **DREKKER INEX DREI Scattergun (GEAR_Scattergun_Semi | ID: 72)**
+- **Precision Multiplier**: 0.7333 → 0.6 (-18%)
+- **Ammo Cost**: 16.3 → 20.6 (+26%)
+
+#### **BUCKLAND XDIST2 Choke Mod Shotgun (GEAR_Shotgun_Choke_Mod | ID: 34)**
+- **Ammo Cost**: 10.0 → 9.55 (-4.5%)
+
+---
+
+### **EQUIPMENT & TOOLS**
+
+#### **AUTOTEK 51 RSG Sniper Sentry (GEAR_SentryGun_Semi_sniper | ID: 54)**
+- **Damage**: 48.1 → 50.1 (+4%)
+- **Fire Rate**: 2.6s → 1.9s shot delay (**+37% faster**)
+- **Ammo Cost**: 16.0 → 14.5 (-9%)
+- **Piercing**: Now pierces through enemies
+- **Deployment Speed**: 2.8s → 0.6s (**+78% faster deployment**)
+- **Rotation Speed**: 6.0 → 10.0 (+67% faster tracking)
+- **Detection Angle**: 20° → 90° (**+350% wider coverage**)
+- **Tag Bonuses**: Significantly improved performance vs tagged enemies
+
+#### **MECHATRONIC SGB3 Burst Sentry (GEAR_SentryGun_Burst | ID: 55)**
+- **Range**: 10m-40m → 20m-80m effective range (**+100% range**)
+- **Ammo Cost**: 2.05 → 2.26 (+10%)
+- **Piercing**: Now pierces through enemies (2 targets max)
+- **Burst Delay**: 1.0s → 0.5s (**+100% burst rate**)
+- **Deployment Speed**: 1.0s → 0.5s (+100% faster)
+- **Rotation Speed**: 4.0 → 10.0 (+150% faster tracking)
+- **Detection Angle**: 30° → 90° (+200% wider coverage)
+
+#### **RAD LABS MEDUZA HEL Auto Sentry (GEAR_SentryGun_Auto_staggering | ID: 57)**
+- **Damage**: 0.8 → 1.0 (+25%)
+- **Range**: 10m → 18m effective range (+80%)
+- **Ammo Cost**: 0.7 → 1.1 (+57%)
+- **Piercing**: 2 → 3 targets max (+50%)
+- **Deployment Speed**: 1.0s → 0.5s (+100% faster)
+- **Rotation Speed**: 4.0 → 10.0 (+150% faster tracking)
+- **Detection Range**: 25m → 20m (-20%)
+- **Detection Angle**: 30° → 90° (+200% wider coverage)
+
+#### **MECHATRONIC B5 LFR Shotgun Sentry (GEAR_SentryGun_Shotgun_Semi | ID: 58)**
+- **Damage**: 3.01 → 2.21 (-27%)
+- **Stagger Multiplier**: 1.0 → 2.0 (**+100% stagger power**)
+- **Ammo Cost**: 1.58 → 1.7 (+8%)
+- **Piercing**: Now pierces through enemies (2 targets max)
+- **Pellet Count**: 5 → 10 pellets (**+100% pellets per shot**)
+- **Spread Pattern**: 2 → 1 spread (+50% tighter pattern)
+- **Deployment Speed**: 0.5s (unchanged, already fast)
+- **Rotation Speed**: 8.0 → 10.0 (+25% faster tracking)
+- **Detection Range**: 10m → 12m (+20%)
+- **Detection Angle**: 40° → 90° (+125% wider coverage)
 
 </details>
 
