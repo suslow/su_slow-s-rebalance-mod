@@ -7,7 +7,7 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 ## ✨ Key Features
 
 - **26 weapon archetypes rebalanced** - Every weapon type receives meaningful improvements
-- **Enhanced turret systems** - All sentries get major upgrades including 90° detection angles and improved rotation speed
+- **Enhanced turret systems** - All sentries get major upgrades including 70° detection angles and improved rotation speed
 - **Better flashlights** - Increased range and improved visibility for all flashlight types  
 - **Improved melee combat** - Reduced stamina costs and increased damage for spears and bats
 - **Maintained game balance** - Changes preserve the core GTFO experience while expanding viable options
