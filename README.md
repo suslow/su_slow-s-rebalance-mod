@@ -49,20 +49,12 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Ammo Cost**: 1.65 → 1.765
 
 #### **Malatack LX Assault Rifle (GEAR_Rifle_Auto | ID: 5)**
-- **Damage**: 2.19 → 2.6
+- **Damage**: 2.19 → 2.75
 - **Magazine Size**: 30 → 50 rounds
 - **Reload Time**: 1.8s → 2.4s
 - **Ammo Cost**: 1.47 → 2.0
 - **Stagger Multiplier**: 1.0 → 1.1
 - **Precision Multiplier**: 0.8 → 0.65
-
-#### **Drekker CLR Short RifleDrekker CLR Short Rifle (GEAR_SMG_Semi | ID: 17)**
-- **Fire Mode**: Semi-Auto → **Burst Fire** (3-round burst)
-- **Damage**: 4.81 → 7.0
-- **Range**: 8m → 10m effective range
-- **Fire Rate**: Significantly increased
-- **Ammo Cost**: 1.38 → 2.32
-- **Burst Delay**: Added 0.15s between bursts
 
 #### **ACCRAT ND6 Heavy SMG (GEAR_SMG_Heavy_Auto | ID: 69)**
 - **Piercing**: Now pierces through enemies (3 targets max)
@@ -76,9 +68,24 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Hip Fire Accuracy**: 2.5 → 2.0 spread
 - **Stagger Multiplier**: 1.0 → 0.8
 
+#### **BATALDO CUSTOM K330 Slug Shotgun (GEAR_Shotgun_Slug_Semi | ID: 81)**
+- **Ammo Cost**: 12.0 → 11.5
+- **Fire Rate**: 0.75s → 0.70s shot delay
+
+#### **BUCKLAND SBS III Sawed-off Shotgun (GEAR_Sawed-Off_Shotgun_Semi | ID: 45)**
+- **Magazine Size**: 4 → 3 rounds
+
 ---
 
 ### **SPECIAL WEAPONS**
+
+#### **Drekker CLR Short RifleDrekker CLR Short Rifle (GEAR_SMG_Semi | ID: 17)**
+- **Fire Mode**: Semi-Auto → **Burst Fire** (3-round burst)
+- **Damage**: 4.81 → 7.0
+- **Range**: 8m → 10m effective range
+- **Fire Rate**: Significantly increased
+- **Ammo Cost**: 1.38 → 2.32
+- **Burst Delay**: Added 0.15s between bursts
 
 #### **TR22 HANAWAY DMR (GEAR_DMR_Semi_v2 | ID: 25)**
 - **Damage**: 7.51 → 8.0
@@ -118,13 +125,6 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 #### **BUCKLAND S870 Shotgun (GEAR_Shotgun_Semi_v2 | ID: 33)**
 - **Damage**: 3.01 → 3.1
 - **Range**: 4m → 5m effective range
-
-#### **BATALDO CUSTOM K330 Slug Shotgun (GEAR_Shotgun_Slug_Semi | ID: 81)**
-- **Ammo Cost**: 12.0 → 11.5
-- **Fire Rate**: 0.75s → 0.70s shot delay
-
-#### **BUCKLAND SBS III Sawed-off Shotgun (GEAR_Sawed-Off_Shotgun_Semi | ID: 45)**
-- **Magazine Size**: 4 → 3 rounds
 
 #### **DREKKER INEX DREI Scattergun (GEAR_Scattergun_Semi | ID: 72)**
 - **Precision Multiplier**: 0.7333 → 0.6
