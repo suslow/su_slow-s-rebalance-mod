@@ -140,7 +140,8 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 #### **AUTOTEK 51 RSG Sniper Sentry (GEAR_SentryGun_Semi_sniper | ID: 54)**
 - **Damage**: 48.1 → 50.1
 - **Fire Rate**: 2.6s → 1.9s shot delay
-- **Ammo Cost**: 16.0 → 14.5
+- **Ammo Cost**: 16.0 → 5.8
+- **Sentry Tag Cost Multiplier**: 0.4 → 1.0
 - **Piercing**: Now pierces through enemies
 - **Deployment Speed**: 2.8s → 0.6s
 - **Rotation Speed**: 6.0 → 10.0
@@ -149,7 +150,8 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 
 #### **MECHATRONIC SGB3 Burst Sentry (GEAR_SentryGun_Burst | ID: 55)**
 - **Range**: 10m-40m → 20m-80m effective range
-- **Ammo Cost**: 2.05 → 2.26
+- **Ammo Cost**: 2.05 → 1.36
+- **Sentry Tag Cost Multiplier**: 0.6 → 1.0
 - **Piercing**: Now pierces through enemies (2 targets max)
 - **Burst Delay**: 1.0s → 0.5s
 - **Deployment Speed**: 1.0s → 0.5s
@@ -159,7 +161,8 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 #### **RAD LABS MEDUZA HEL Auto Sentry (GEAR_SentryGun_Auto_staggering | ID: 57)**
 - **Damage**: 0.8 → 1.0
 - **Range**: 10m → 18m effective range
-- **Ammo Cost**: 0.7 → 1.1
+- **Ammo Cost**: 0.7 → 0.55
+- **Sentry Tag Cost Multiplier**: 0.5 → 1.0
 - **Piercing**: 2 → 3 targets max
 - **Deployment Speed**: 1.0s → 0.5s
 - **Rotation Speed**: 4.0 → 10.0
@@ -169,7 +172,8 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 #### **MECHATRONIC B5 LFR Shotgun Sentry (GEAR_SentryGun_Shotgun_Semi | ID: 58)**
 - **Damage**: 3.01 → 2.21
 - **Stagger Multiplier**: 1.0 → 2.0
-- **Ammo Cost**: 1.58 → 1.7
+- **Ammo Cost**: 1.58 → 0.85
+- **Sentry Tag Cost Multiplier**: 0.5 → 1.0
 - **Piercing**: Now pierces through enemies (2 targets max)
 - **Pellet Count**: 5 → 10 pellets
 - **Spread Pattern**: 2 → 1 spread
