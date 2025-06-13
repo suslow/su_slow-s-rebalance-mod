@@ -10,38 +10,116 @@ function getBlockName(block) {
     return 'Unknown Block';
 }
 
-// Список важных полей для разных типов файлов
-const IMPORTANT_FIELDS = {
-    'GameData_ArchetypeDataBlock_bin.json': [
-        'Damage', 'DefaultClipSize', 'DefaultReloadTime', 'CostOfBullet', 'ShotDelay',
-        'StaggerDamageMulti', 'PrecisionDamageMulti', 'DamageFalloff', 'FireMode',
-        'BurstDelay', 'BurstShotCount', 'PiercingBullets', 'PiercingDamageCountLimit',
-        'ShotgunBulletCount', 'ShotgunBulletSpread', 'HipFireSpread'
-    ],
-    'GameData_FlashlightSettingsDataBlock_bin.json': [
-        'range', 'angle', 'intensity', 'color'
-    ],
-    'GameData_MeleeArchetypeDataBlock_bin.json': [
-        'ChargedAttackDamage', 'LightAttackDamage', 'LightStaggerMulti', 'ChargedStaggerMulti',
-        'ChargedAttackStaminaCost', 'LightAttackStaminaCost', 'PushStaminaCost'
-    ]
-};
+// Технические поля которые нужно игнорировать
+const IGNORED_PATTERNS = [
+    /^Headers$/,
+    /^LastPersistentID$/,
+    /^persistentID$/,
+    /^internalEnabled$/,
+    /EquipSequence/,
+    /AimSequence/,
+    /^Anim$/,
+    /AnimHash/,
+    /^TPAnim/,
+    /^FPAnim/,
+    /FrameTime$/,
+    /BlendIn$/,
+    /^startupShard$/,
+    /^Side$/
+];
+
+// Критически важные поля (всегда показывать)
+const CRITICAL_FIELDS = [
+    'Damage', 'DefaultClipSize', 'DefaultReloadTime', 'CostOfBullet', 'ShotDelay',
+    'StaggerDamageMulti', 'PrecisionDamageMulti', 'FireMode',
+    'BurstDelay', 'BurstShotCount', 'PiercingBullets', 'PiercingDamageCountLimit',
+    'ShotgunBulletCount', 'ShotgunBulletSpread', 'HipFireSpread',
+    'ChargedAttackDamage', 'LightAttackDamage', 'LightStaggerMulti', 'ChargedStaggerMulti',
+    'range', 'angle', 'intensity'
+];
 
 // Функция для проверки, важное ли это поле
-function isImportantField(fileName, fieldPath) {
-    const fields = IMPORTANT_FIELDS[fileName] || [];
+function isImportantField(fieldPath, oldValue, newValue) {
     const fieldName = fieldPath.split('.').pop();
+    const fullPath = fieldPath;
     
-    // Также проверяем вложенные поля (например, DamageFalloff.x)
-    const parentField = fieldPath.split('.').slice(-2, -1)[0];
+    // 1. Критически важные поля - всегда показывать
+    if (CRITICAL_FIELDS.includes(fieldName)) {
+        return true;
+    }
     
-    return fields.includes(fieldName) || fields.includes(parentField);
+    // 2. Игнорируем техническую фигню
+    if (IGNORED_PATTERNS.some(pattern => pattern.test(fieldName) || pattern.test(fullPath))) {
+        return false;
+    }
+    
+    // 3. Автоматически включаем числовые поля (они обычно важны для баланса)
+    if (typeof oldValue === 'number' && typeof newValue === 'number') {
+        return true;
+    }
+    
+    // 4. Булевы поля тоже важны (включение/выключение фич)
+    if (typeof oldValue === 'boolean' && typeof newValue === 'boolean') {
+        return true;
+    }
+    
+    // 5. Специфические паттерны для разных типов полей
+    const importantPatterns = [
+        // Турели
+        /^Sentry_/,
+        // Отдача
+        /Recoil/,
+        // Урон и эффекты
+        /Multi$/,
+        /Multiplier$/,
+        /Damage/,
+        /Stagger/,
+        /Precision/,
+        // Дальности и углы
+        /Range$/,
+        /Falloff/,
+        /Angle$/,
+        // Боеприпасы и эффективность
+        /Cost/,
+        /Bullet/,
+        /Ammo/,
+        // Времена
+        /Time$/,
+        /Delay$/,
+        // Цвета (для фонарей)
+        /^[rgb]$/,
+        // Радиусы и размеры
+        /Radius$/,
+        /Spread$/,
+        /Size$/,
+        // Параметры выносливости
+        /Stamina/,
+        // Параметры обнаружения
+        /Detection/,
+        // Скорости
+        /Speed$/,
+        /Rate$/
+    ];
+    
+    if (importantPatterns.some(pattern => pattern.test(fieldName) || pattern.test(fullPath))) {
+        return true;
+    }
+    
+    // 6. Строковые изменения только если это не техническая фигня
+    if (typeof oldValue === 'string' && typeof newValue === 'string') {
+        // Разрешаем только короткие строки (вероятно значения, не пути к файлам)
+        if (newValue.length < 50 && !newValue.includes('/') && !newValue.includes('.')) {
+            return true;
+        }
+    }
+    
+    return false;
 }
 
-// Функция для сравнения значений
-function compareValues(oldVal, newVal, fieldPath, fileName) {
+// Функция для сравнения значений  
+function compareValues(oldVal, newVal, fieldPath) {
     // Проверяем, важное ли это поле
-    if (!isImportantField(fileName, fieldPath)) {
+    if (!isImportantField(fieldPath, oldVal, newVal)) {
         return null;
     }
     
@@ -60,6 +138,15 @@ function compareValues(oldVal, newVal, fieldPath, fileName) {
         };
     }
     
+    // Для булевых значений
+    if (typeof oldVal === 'boolean' && typeof newVal === 'boolean') {
+        return {
+            oldValue: oldVal,
+            newValue: newVal,
+            formatted: `${oldVal} → ${newVal}`
+        };
+    }
+    
     // Для строк и других примитивов
     if (oldVal !== newVal) {
         return {
@@ -73,7 +160,7 @@ function compareValues(oldVal, newVal, fieldPath, fileName) {
 }
 
 // Рекурсивное сравнение объектов
-function compareObjects(oldObj, newObj, path = '', changes = [], fileName = '') {
+function compareObjects(oldObj, newObj, path = '', changes = []) {
     for (const key in newObj) {
         const currentPath = path ? `${path}.${key}` : key;
         const oldValue = oldObj[key];
@@ -81,7 +168,7 @@ function compareObjects(oldObj, newObj, path = '', changes = [], fileName = '') 
         
         if (!(key in oldObj)) {
             // Новое поле - только если важное
-            if (isImportantField(fileName, currentPath) && (typeof newValue !== 'object' || newValue === null)) {
+            if (isImportantField(currentPath, null, newValue) && (typeof newValue !== 'object' || newValue === null)) {
                 changes.push({
                     path: currentPath,
                     type: 'added',
@@ -91,10 +178,10 @@ function compareObjects(oldObj, newObj, path = '', changes = [], fileName = '') 
             }
         } else if (typeof newValue === 'object' && newValue !== null && !Array.isArray(newValue)) {
             // Рекурсивно сравниваем объекты
-            compareObjects(oldValue, newValue, currentPath, changes, fileName);
+            compareObjects(oldValue, newValue, currentPath, changes);
         } else {
             // Сравниваем примитивы
-            const change = compareValues(oldValue, newValue, currentPath, fileName);
+            const change = compareValues(oldValue, newValue, currentPath);
             if (change) {
                 changes.push({
                     path: currentPath,
