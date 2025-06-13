@@ -49,12 +49,12 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Ammo Cost**: 1.65 → 1.765
 
 #### **Malatack LX Assault Rifle (GEAR_Rifle_Auto | ID: 5)**
-- **Damage**: 2.19 → 3.0
+- **Damage**: 2.19 → 2.6
 - **Magazine Size**: 30 → 50 rounds
 - **Reload Time**: 1.8s → 2.4s
 - **Ammo Cost**: 1.47 → 2.0
-- **Stagger Multiplier**: 1.0 → 0.8
-- **Precision Multiplier**: 0.8 → 0.78
+- **Stagger Multiplier**: 1.0 → 1.1
+- **Precision Multiplier**: 0.8 → 0.65
 
 #### **Drekker CLR Short RifleDrekker CLR Short Rifle (GEAR_SMG_Semi | ID: 17)**
 - **Fire Mode**: Semi-Auto → **Burst Fire** (3-round burst)
