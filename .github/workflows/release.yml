@@ -51,9 +51,8 @@ jobs:
 
     - name: Create release package
       run: |
-        mkdir -p release
-        # Копируем файлы мода прямо в корень (старая структура)
-        cp BepInEx/plugins/suslow_rebalance_mod/*.json release/
+        mkdir -p release/BepInEx/plugins
+        cp -r BepInEx/plugins/suslow_rebalance_mod release/BepInEx/plugins/
         cp icon.png release/
         cp README.md release/
         cp manifest.json release/
