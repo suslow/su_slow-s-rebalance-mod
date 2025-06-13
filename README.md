@@ -15,7 +15,7 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 ## 📋 Installation
 
 ### Automatic (Recommended)
-1. Install via [Thunderstore Mod Manager](https://www.overwolf.com/app/thunderstore-thunderstore_mod_manager) or [r2modman](https://gtfo.thunderstore.io/package/ebkr/r2modman/)
+1. Install via [Thunderstore Mod Manager](https://www.overwolf.com/app/thunderstore-thunderstore_mod_manager), [r2modman](https://gtfo.thunderstore.io/package/ebkr/r2modman/) or [Gale](https://thunderstore.io/c/gtfo/p/Kesomannen/GaleModManager/)
 2. Search for "suslow rebalance mod" 
 3. Click Install
 
