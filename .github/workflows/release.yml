@@ -47,8 +47,8 @@ jobs:
 
     - name: Create release package
       run: |
-        mkdir -p release
-        cp -r BepInEx/plugins/suslow_rebalance_mod release/
+        mkdir -p release/BepInEx/plugins
+        cp -r BepInEx/plugins/suslow_rebalance_mod release/BepInEx/plugins/
         cp icon.png release/
         cp README.md release/
         cp manifest.json release/
