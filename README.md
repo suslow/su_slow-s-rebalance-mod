@@ -145,7 +145,7 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Piercing**: Now pierces through enemies
 - **Deployment Speed**: 2.8s → 0.6s
 - **Rotation Speed**: 6.0 → 10.0
-- **Detection Angle**: 20° → 90°
+- **Detection Angle**: 20° → 70°
 - **Tag Bonuses**: Significantly improved performance vs tagged enemies
 
 #### **MECHATRONIC SGB3 Burst Sentry (GEAR_SentryGun_Burst | ID: 55)**
@@ -156,7 +156,7 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Burst Delay**: 1.0s → 0.5s
 - **Deployment Speed**: 1.0s → 0.5s
 - **Rotation Speed**: 4.0 → 10.0
-- **Detection Angle**: 30° → 90°
+- **Detection Angle**: 30° → 70°
 
 #### **RAD LABS MEDUZA HEL Auto Sentry (GEAR_SentryGun_Auto_staggering | ID: 57)**
 - **Damage**: 0.8 → 1.0
@@ -167,7 +167,7 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Deployment Speed**: 1.0s → 0.5s
 - **Rotation Speed**: 4.0 → 10.0
 - **Detection Range**: 25m → 20m
-- **Detection Angle**: 30° → 90°
+- **Detection Angle**: 30° → 70°
 
 #### **MECHATRONIC B5 LFR Shotgun Sentry (GEAR_SentryGun_Shotgun_Semi | ID: 58)**
 - **Damage**: 3.01 → 2.21
@@ -180,7 +180,7 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Deployment Speed**: 0.5s
 - **Rotation Speed**: 8.0 → 10.0
 - **Detection Range**: 10m → 12m
-- **Detection Angle**: 40° → 90°
+- **Detection Angle**: 40° → 70°
 
 </details>
 
