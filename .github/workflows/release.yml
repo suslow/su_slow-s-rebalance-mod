@@ -26,6 +26,20 @@ jobs:
           echo "version=1.0.0" >> $GITHUB_OUTPUT
         fi
 
+    - name: Generate changelog
+      run: |
+        if [ ! -d "previous" ]; then
+          echo "First release - initializing previous version"
+          node scripts/generate-changelog.js --init
+        else
+          echo "Generating changelog since last version"
+          node scripts/generate-changelog.js
+        fi
+        if [ -f CHANGELOG.md ]; then
+          echo "Generated changelog:"
+          head -30 CHANGELOG.md
+        fi
+
     - name: Update manifest version
       run: |
         VERSION="${{ steps.get_version.outputs.version }}"
@@ -38,6 +52,9 @@ jobs:
         cp icon.png release/
         cp README.md release/
         cp manifest.json release/
+        if [ -f CHANGELOG.md ]; then
+          cp CHANGELOG.md release/
+        fi
         cd release
         zip -r ../suslow_rebalance_mod-${{ steps.get_version.outputs.version }}.zip .
 
@@ -60,3 +77,11 @@ jobs:
         prerelease: false
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Update previous version for next release
+      if: success()
+      run: |
+        echo "Updating previous version files for next changelog..."
+        mkdir -p previous
+        cp BepInEx/plugins/suslow_rebalance_mod/*.json previous/
+        echo "Previous version updated"

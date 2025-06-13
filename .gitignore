@@ -1,4 +1,2 @@
 *.zip
-build/
-.DS_Store
-Thumbs.db
+CHANGELOG.md
