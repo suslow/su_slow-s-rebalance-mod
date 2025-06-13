@@ -60,27 +60,29 @@ jobs:
 
     - name: Create release notes
       run: |
-        cat > RELEASE_NOTES.md << 'EOF'
-        ## Installation
-        
-        1. Download the zip file below
-        2. Install [BepInEx for GTFO](https://gtfo.thunderstore.io/package/BepInEx/BepInExPack_GTFO/)
-        3. Install [MTFO](https://gtfo.thunderstore.io/package/dakkhuza/MTFO/)
-        4. Extract this mod to your `BepInEx/plugins/` folder
-        
-        Or install via [Thunderstore Mod Manager](https://www.overwolf.com/app/thunderstore-thunderstore_mod_manager)
-        
-        ---
-        
-        EOF
+        echo "## Installation" > RELEASE_NOTES.md
+        echo "" >> RELEASE_NOTES.md
+        echo "1. Download the zip file below" >> RELEASE_NOTES.md
+        echo "2. Install [BepInEx for GTFO](https://gtfo.thunderstore.io/package/BepInEx/BepInExPack_GTFO/)" >> RELEASE_NOTES.md
+        echo "3. Install [MTFO](https://gtfo.thunderstore.io/package/dakkhuza/MTFO/)" >> RELEASE_NOTES.md
+        echo "4. Extract this mod to your \`BepInEx/plugins/\` folder" >> RELEASE_NOTES.md
+        echo "" >> RELEASE_NOTES.md
+        echo "Or install via Gale, r2modman" >> RELEASE_NOTES.md
+        echo "" >> RELEASE_NOTES.md
+        echo "---" >> RELEASE_NOTES.md
+        echo "" >> RELEASE_NOTES.md
         
         if [ -f CHANGELOG.md ]; then
-          cat CHANGELOG.md >> RELEASE_NOTES.md
+            echo "Adding changelog to release notes..."
+            cat CHANGELOG.md >> RELEASE_NOTES.md
         else
-          echo "## Changes in this version" >> RELEASE_NOTES.md
-          echo "" >> RELEASE_NOTES.md
-          echo "*No changelog available for this release.*" >> RELEASE_NOTES.md
+            echo "## Changes in this version" >> RELEASE_NOTES.md
+            echo "" >> RELEASE_NOTES.md
+            echo "*No changelog available for this release.*" >> RELEASE_NOTES.md
         fi
+        
+        echo "Release notes created. First few lines:"
+        head -10 RELEASE_NOTES.md
 
     - name: Create GitHub Release
       uses: softprops/action-gh-release@v1

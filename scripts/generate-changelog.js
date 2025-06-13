@@ -118,6 +118,11 @@ function isImportantField(fieldPath, oldValue, newValue) {
 
 // Функция для сравнения значений  
 function compareValues(oldVal, newVal, fieldPath) {
+    // Сначала проверяем, есть ли реальное изменение
+    if (oldVal === newVal) {
+        return null; // Нет изменений
+    }
+    
     // Проверяем, важное ли это поле
     if (!isImportantField(fieldPath, oldVal, newVal)) {
         return null;
@@ -148,15 +153,11 @@ function compareValues(oldVal, newVal, fieldPath) {
     }
     
     // Для строк и других примитивов
-    if (oldVal !== newVal) {
-        return {
-            oldValue: oldVal,
-            newValue: newVal,
-            formatted: `${oldVal} → ${newVal}`
-        };
-    }
-    
-    return null;
+    return {
+        oldValue: oldVal,
+        newValue: newVal,
+        formatted: `${oldVal} → ${newVal}`
+    };
 }
 
 // Рекурсивное сравнение объектов
