@@ -39,10 +39,6 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 
 ### **MAIN WEAPONS**
 
-#### **Malatack HXC Heavy Assault Rifle (GEAR_Rifle_Semi | ID: 1)**
-- **Magazine Size**: 14 → 20 rounds
-- **Reload Time**: 1.9s → 2.0s
-- **Ammo Cost**: 3.8 → 3.83
 
 #### **MALATACK CH 4 Burst Rifle (GEAR_Rifle_Burst | ID: 3)**
 - **Damage**: 2.71 → 2.85
@@ -77,16 +73,6 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 
 ---
 
-### **SPECIAL WEAPONS**
-
-#### **Drekker CLR Short RifleDrekker CLR Short Rifle (GEAR_SMG_Semi | ID: 17)**
-- **Fire Mode**: Semi-Auto → **Burst Fire** (3-round burst)
-- **Damage**: 4.81 → 7.0
-- **Range**: 8m → 10m effective range
-- **Fire Rate**: Significantly increased
-- **Ammo Cost**: 1.38 → 2.32
-- **Burst Delay**: Added 0.15s between bursts
-
 #### **TR22 HANAWAY DMR (GEAR_DMR_Semi_v2 | ID: 25)**
 - **Damage**: 7.51 → 8.0
 - **Magazine Size**: 12 → 8 rounds
@@ -94,6 +80,23 @@ No more being forced into the same meta loadouts - now you can enjoy experimenti
 - **Ammo Cost**: 5.89 → 10.9
 - **Fire Rate**: 0.25s → 0.35s shot delay
 - **Precision Multiplier**: 0.87 → 0.85
+
+---
+
+### **SPECIAL WEAPONS**
+
+#### **Malatack HXC Heavy Assault Rifle (GEAR_Rifle_Semi | ID: 1)**
+- **Magazine Size**: 14 → 20 rounds
+- **Reload Time**: 1.9s → 2.0s
+- **Ammo Cost**: 3.8 → 3.83
+
+#### **Drekker CLR Short Rifle (GEAR_SMG_Semi | ID: 17)**
+- **Fire Mode**: Semi-Auto → **Burst Fire** (3-round burst)
+- **Damage**: 4.81 → 7.0
+- **Range**: 8m → 10m effective range
+- **Fire Rate**: Significantly increased
+- **Ammo Cost**: 1.38 → 2.32
+- **Burst Delay**: Added 0.15s between bursts
 
 #### **KÖNING PR 11 Sniper Rifle (GEAR_Sniper_Semi_v2 | ID: 29)**
 - **Magazine Size**: 2 → 3 rounds
