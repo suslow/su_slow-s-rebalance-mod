@@ -1,0 +1,453 @@
+{
+  "weapon_mappings": {
+    "main_weapons": {
+      "3": {
+        "id": 3,
+        "internal_name": "GEAR_Rifle_Burst",
+        "display_name": "Malatack CH 4 Burst Rifle",
+        "damage": 2.71,
+        "magazine_size": 30,
+        "ammo_cost": 1.65,
+        "reload_time": 2.0,
+        "fire_mode": "Burst",
+        "burst_count": 3,
+        "category": "Main Weapon"
+      },
+      "5": {
+        "id": 5,
+        "internal_name": "GEAR_Rifle_Auto",
+        "display_name": "Malatack LX Assault Rifle",
+        "damage": 2.19,
+        "magazine_size": 30,
+        "ammo_cost": 1.47,
+        "reload_time": 1.8,
+        "fire_mode": "Full-Auto",
+        "category": "Main Weapon"
+      },
+      "18": {
+        "id": 18,
+        "internal_name": "GEAR_SMG_Auto",
+        "display_name": "Van Auken LTC5 SMG",
+        "damage": 1.98,
+        "magazine_size": 40,
+        "ammo_cost": 1.14,
+        "reload_time": 1.7,
+        "fire_mode": "Full-Auto",
+        "category": "Main Weapon"
+      },
+      "19": {
+        "id": 19,
+        "internal_name": "GEAR_SMG_Burst",
+        "display_name": "Accrat STB PDW",
+        "damage": 2.15,
+        "magazine_size": 40,
+        "ammo_cost": 1.14,
+        "reload_time": 1.7,
+        "fire_mode": "Burst",
+        "burst_count": 3,
+        "category": "Main Weapon"
+      },
+      "25": {
+        "id": 25,
+        "internal_name": "GEAR_DMR_Semi_v2",
+        "display_name": "TR22 Hanaway DMR",
+        "damage": 7.51,
+        "magazine_size": 12,
+        "ammo_cost": 5.89,
+        "reload_time": 2.0,
+        "fire_mode": "Semi-Auto",
+        "category": "Main Weapon"
+      },
+      "26": {
+        "id": 26,
+        "internal_name": "GEAR_DMR_SemiBurst",
+        "display_name": "Hanaway PSB Double Tap Rifle",
+        "damage": 5.51,
+        "magazine_size": 10,
+        "ammo_cost": 4.04,
+        "reload_time": 2.0,
+        "fire_mode": "Semi-Burst",
+        "burst_count": 2,
+        "category": "Main Weapon"
+      },
+      "38": {
+        "id": 38,
+        "internal_name": "GEAR_Revolver_Burst",
+        "display_name": "Bataldo 3RB HEL Revolver",
+        "damage": 8.01,
+        "magazine_size": 6,
+        "ammo_cost": 4.8,
+        "reload_time": 2.0,
+        "fire_mode": "Burst",
+        "burst_count": 3,
+        "category": "Main Weapon"
+      },
+      "41": {
+        "id": 41,
+        "internal_name": "GEAR_Pistol_Semi",
+        "display_name": "Shelling S49 Pistol",
+        "damage": 4.64,
+        "magazine_size": 15,
+        "ammo_cost": 1.3,
+        "reload_time": 1.2,
+        "fire_mode": "Semi-Auto",
+        "category": "Main Weapon"
+      },
+      "42": {
+        "id": 42,
+        "internal_name": "GEAR_Pistol_Burst",
+        "display_name": "Shelling Nano Burst Pistol",
+        "damage": 3.2,
+        "magazine_size": 15,
+        "ammo_cost": 1.3,
+        "reload_time": 1.2,
+        "fire_mode": "Burst",
+        "burst_count": 3,
+        "category": "Main Weapon"
+      },
+      "43": {
+        "id": 43,
+        "internal_name": "GEAR_Pistol_Auto",
+        "display_name": "Raptus Treffen 2 Machine Pistol",
+        "damage": 1.9,
+        "magazine_size": 15,
+        "ammo_cost": 1.3,
+        "reload_time": 1.2,
+        "fire_mode": "Full-Auto",
+        "category": "Main Weapon"
+      },
+      "44": {
+        "id": 44,
+        "internal_name": "GEAR_Pistol_HEL_Auto",
+        "display_name": "Raptus Steigro HEL Autopistol",
+        "damage": 1.5,
+        "magazine_size": 15,
+        "ammo_cost": 1.3,
+        "reload_time": 1.2,
+        "fire_mode": "Full-Auto",
+        "category": "Main Weapon"
+      },
+      "45": {
+        "id": 45,
+        "internal_name": "GEAR_Sawed-Off_Shotgun_Semi",
+        "display_name": "Buckland SBS III Sawed-off Shotgun",
+        "damage": 3.8,
+        "magazine_size": 4,
+        "ammo_cost": 2.55,
+        "reload_time": 2.1,
+        "fire_mode": "Semi-Auto",
+        "pellet_count": 5,
+        "category": "Main Weapon"
+      },
+      "46": {
+        "id": 46,
+        "internal_name": "GEAR_Shotgun_HEL_Semi",
+        "display_name": "Bataldo J 300 HEL Shotgun",
+        "damage": 1.67,
+        "magazine_size": 8,
+        "ammo_cost": 2.7,
+        "reload_time": 2.1,
+        "fire_mode": "Semi-Auto",
+        "pellet_count": 5,
+        "category": "Main Weapon"
+      },
+      "49": {
+        "id": 49,
+        "internal_name": "GEAR_Bullpup_Auto",
+        "display_name": "Accrat Golok DA Bullpup Rifle",
+        "damage": 2.1,
+        "magazine_size": 40,
+        "ammo_cost": 1.5,
+        "reload_time": 1.8,
+        "fire_mode": "Full-Auto",
+        "category": "Main Weapon"
+      },
+      "69": {
+        "id": 69,
+        "internal_name": "GEAR_SMG_Heavy_Auto",
+        "display_name": "Accrat ND6 Heavy SMG",
+        "damage": 2.45,
+        "magazine_size": 40,
+        "ammo_cost": 1.38,
+        "reload_time": 1.7,
+        "fire_mode": "Full-Auto",
+        "category": "Main Weapon"
+      },
+      "71": {
+        "id": 71,
+        "internal_name": "GEAR_SMG_CQB",
+        "display_name": "Van Auken CAB F4 Carbine",
+        "damage": 2.38,
+        "magazine_size": 40,
+        "ammo_cost": 1.14,
+        "reload_time": 1.7,
+        "fire_mode": "Full-Auto",
+        "category": "Main Weapon"
+      },
+      "81": {
+        "id": 81,
+        "internal_name": "GEAR_Shotgun_Slug_Semi",
+        "display_name": "Bataldo Custom K330 Slug Shotgun",
+        "damage": 21.0,
+        "magazine_size": 8,
+        "ammo_cost": 12.0,
+        "reload_time": 2.1,
+        "fire_mode": "Semi-Auto",
+        "pellet_count": 1,
+        "category": "Main Weapon"
+      },
+      "6": {
+        "id": 6,
+        "internal_name": "GEAR_Rifle_CQB_Semi",
+        "display_name": "Drekker Pres MOD 556 Rifle",
+        "damage": 5.08,
+        "magazine_size": 30,
+        "ammo_cost": 3.8,
+        "reload_time": 1.9,
+        "fire_mode": "Semi-Auto",
+        "category": "Main Weapon"
+      }
+    },
+    "special_weapons": {
+      "1": {
+        "id": 1,
+        "internal_name": "GEAR_Rifle_Semi",
+        "display_name": "Malatack HXC Heavy Assault Rifle",
+        "damage": 5.08,
+        "magazine_size": 14,
+        "ammo_cost": 3.8,
+        "reload_time": 1.9,
+        "fire_mode": "Semi-Auto",
+        "category": "Special Weapon"
+      },
+      "17": {
+        "id": 17,
+        "internal_name": "GEAR_SMG_Semi",
+        "display_name": "Drekker CLR Short Rifle",
+        "damage": 4.81,
+        "magazine_size": 40,
+        "ammo_cost": 1.38,
+        "reload_time": 1.7,
+        "fire_mode": "Semi-Auto",
+        "category": "Special Weapon"
+      },
+      "21": {
+        "id": 21,
+        "internal_name": "GEAR_MachineGun_Semi",
+        "display_name": "Omneco EXP1 HEL Gun",
+        "damage": 5.01,
+        "magazine_size": 100,
+        "ammo_cost": 5.74,
+        "reload_time": 5.0,
+        "fire_mode": "Semi-Auto",
+        "category": "Special Weapon"
+      },
+      "22": {
+        "id": 22,
+        "internal_name": "GEAR_MachineGun_Burst",
+        "display_name": "Techman Arbalist V Machine Gun",
+        "damage": 4.81,
+        "magazine_size": 20,
+        "ammo_cost": 2.3,
+        "reload_time": 2.4,
+        "fire_mode": "Burst",
+        "burst_count": 3,
+        "category": "Special Weapon"
+      },
+      "23": {
+        "id": 23,
+        "internal_name": "GEAR_MachineGun_Auto",
+        "display_name": "Techman Veruta XII Machine Gun",
+        "damage": 3.21,
+        "magazine_size": 100,
+        "ammo_cost": 2.3,
+        "reload_time": 5.0,
+        "fire_mode": "Full-Auto",
+        "category": "Special Weapon"
+      },
+      "24": {
+        "id": 24,
+        "internal_name": "GEAR_MachineGun_Burst_med",
+        "display_name": "Techman Klust 6 Burst Cannon",
+        "damage": 5.51,
+        "magazine_size": 18,
+        "ammo_cost": 2.3,
+        "reload_time": 2.4,
+        "fire_mode": "Burst",
+        "burst_count": 3,
+        "category": "Special Weapon"
+      },
+      "29": {
+        "id": 29,
+        "internal_name": "GEAR_Sniper_Semi_v2",
+        "display_name": "Köning PR 11 Sniper",
+        "damage": 33.0,
+        "magazine_size": 2,
+        "ammo_cost": 17.5,
+        "reload_time": 3.0,
+        "fire_mode": "Semi-Auto",
+        "category": "Special Weapon"
+      },
+      "33": {
+        "id": 33,
+        "internal_name": "GEAR_Shotgun_Semi_v2",
+        "display_name": "Buckland S870 Shotgun",
+        "damage": 3.01,
+        "magazine_size": 8,
+        "ammo_cost": 4.05,
+        "reload_time": 2.1,
+        "fire_mode": "Semi-Auto",
+        "pellet_count": 5,
+        "category": "Special Weapon"
+      },
+      "34": {
+        "id": 34,
+        "internal_name": "GEAR_Shotgun_Choke_Mod",
+        "display_name": "Buckland XDIST2 Choke Mod Shotgun",
+        "damage": 4.51,
+        "magazine_size": 8,
+        "ammo_cost": 10.0,
+        "reload_time": 2.1,
+        "fire_mode": "Semi-Auto",
+        "pellet_count": 5,
+        "category": "Special Weapon"
+      },
+      "35": {
+        "id": 35,
+        "internal_name": "GEAR_Shotgun_Auto",
+        "display_name": "Buckland AF6 Combat Shotgun",
+        "damage": 2.51,
+        "magazine_size": 8,
+        "ammo_cost": 2.7,
+        "reload_time": 2.1,
+        "fire_mode": "Full-Auto",
+        "pellet_count": 5,
+        "category": "Special Weapon"
+      },
+      "37": {
+        "id": 37,
+        "internal_name": "GEAR_Revolver_Semi_v2",
+        "display_name": "Mastaba R66 Revolver",
+        "damage": 14.21,
+        "magazine_size": 6,
+        "ammo_cost": 8.0,
+        "reload_time": 2.0,
+        "fire_mode": "Semi-Auto",
+        "category": "Special Weapon"
+      },
+      "65": {
+        "id": 65,
+        "internal_name": "GEAR_HEL_Rifle_semi",
+        "display_name": "Omneco LRG HEL Rifle",
+        "damage": 8.01,
+        "magazine_size": 20,
+        "ammo_cost": 10.0,
+        "reload_time": 2.0,
+        "fire_mode": "Semi-Auto",
+        "category": "Special Weapon"
+      },
+      "72": {
+        "id": 72,
+        "internal_name": "GEAR_Scattergun_Semi",
+        "display_name": "Drekker INEX Drei Scattergun",
+        "damage": 1.5,
+        "magazine_size": 8,
+        "ammo_cost": 16.3,
+        "reload_time": 2.1,
+        "fire_mode": "Semi-Auto",
+        "pellet_count": 15,
+        "category": "Special Weapon"
+      },
+      "79": {
+        "id": 79,
+        "internal_name": "GEAR_Precision_Rifle",
+        "display_name": "Drekker Del P1 Precision Rifle",
+        "damage": 11.01,
+        "magazine_size": 10,
+        "ammo_cost": 6.89,
+        "reload_time": 2.0,
+        "fire_mode": "Semi-Auto",
+        "category": "Special Weapon"
+      },
+      "80": {
+        "id": 80,
+        "internal_name": "GEAR_HighCal_Pistol",
+        "display_name": "Shelling Arid 5 High Caliber Pistol",
+        "damage": 30.1,
+        "magazine_size": 7,
+        "ammo_cost": 10.0,
+        "reload_time": 1.5,
+        "fire_mode": "Semi-Auto",
+        "category": "Special Weapon"
+      }
+    },
+    "sentry_guns": {
+      "54": {
+        "id": 54,
+        "internal_name": "GEAR_SentryGun_Semi_sniper",
+        "display_name": "Autotek 51 RSG Sniper Sentry",
+        "damage": 48.1,
+        "magazine_size": 2,
+        "ammo_cost": 16.0,
+        "reload_time": 3.0,
+        "fire_mode": "Semi-Auto",
+        "category": "SentryGun"
+      },
+      "55": {
+        "id": 55,
+        "internal_name": "GEAR_SentryGun_Burst",
+        "display_name": "Mechatronic SGB3 Burst Sentry",
+        "damage": 4.81,
+        "magazine_size": 20,
+        "ammo_cost": 2.05,
+        "reload_time": 2.4,
+        "fire_mode": "Burst",
+        "burst_count": 3,
+        "category": "SentryGun"
+      },
+      "56": {
+        "id": 56,
+        "internal_name": "GEAR_SentryGun_Auto",
+        "display_name": "Autotek 51 RSG Auto Sentry",
+        "damage": 2.4,
+        "magazine_size": 100,
+        "ammo_cost": 1.15,
+        "reload_time": 5.0,
+        "fire_mode": "Full-Auto",
+        "category": "SentryGun"
+      },
+      "57": {
+        "id": 57,
+        "internal_name": "GEAR_SentryGun_Auto_staggering",
+        "display_name": "RAD Labs Meduza HEL Auto Sentry",
+        "damage": 0.8,
+        "magazine_size": 100,
+        "ammo_cost": 0.7,
+        "reload_time": 5.0,
+        "fire_mode": "Full-Auto",
+        "category": "SentryGun"
+      },
+      "58": {
+        "id": 58,
+        "internal_name": "GEAR_SentryGun_Shotgun_Semi",
+        "display_name": "Mechatronic B5 LFR Shotgun Sentry",
+        "damage": 3.01,
+        "magazine_size": 8,
+        "ammo_cost": 1.58,
+        "reload_time": 2.1,
+        "fire_mode": "Semi-Auto",
+        "pellet_count": 5,
+        "category": "SentryGun"
+      }
+    }
+  },
+  "metadata": {
+    "total_weapons": 38,
+    "main_weapons_count": 18,
+    "special_weapons_count": 15,
+    "sentry_guns_count": 5,
+    "last_updated": "2025-06-14",
+    "game_version": "Current",
+    "notes": "Weapon data corrected based on official GTFO Wiki categorization. Main weapons: 18 general purpose weapons with larger ammo pools. Special weapons: 15 specialized weapons with higher damage but lower ammo reserves. Sentry guns: 5 automated defense weapons."
+  }
+}
